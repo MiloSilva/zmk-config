@@ -92,7 +92,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:arrow-down-bold$$', type: held}
-  - '&KP RIGHT_ARROW'
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
