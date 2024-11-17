@@ -77,10 +77,10 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - '&td1'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&td2'
@@ -90,13 +90,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:arrow-down-bold$$', type: held}
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:apple-keyboard-command$$
+  - {type: held}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:mouse-left-click-outline$$
   SYMBOL:
   - $$mdi:keyboard-tab$$
@@ -145,11 +145,11 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:mouse-left-click-outline$$
   FN:
   - {t: '$$mdi:transfer$$', type: trans}
-  - F1
+  - RGB ON
   - F2
   - F3
   - F4
@@ -159,7 +159,7 @@ layers:
   - F7
   - F8
   - F9
-  - F10
+  - RGB OFF
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
