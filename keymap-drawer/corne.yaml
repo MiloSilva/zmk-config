@@ -112,7 +112,7 @@ layers:
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&PIPE'
+  - '|'
   - '*'
   - '&mkp UNDER'
   - '&mkp LBRC'
