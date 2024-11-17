@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -99,11 +98,11 @@
             //                     | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &bt NUMBER_1  &bt NUMBER_2   &bt NUMBER_3  &bt NUMBER_4   &bt NUMBER_5    &mmv MOVE_DOWN  &bt NUMBER_6  &bt NUMBER_7  &bt NUMBER_8  &bt NUMBER_9  &bt NUMBER_0  &kp BSPC
-&kp F1   &kp F2        &kp F3         &kp F4        &kp F5         &kp F6          &mmv MOVE_UP    &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&trans   &trans        &trans         &trans        &trans         &td1            &mmv MOVE_LEFT  &td2          &trans        &trans        &trans        &trans        &trans
-                       &kp LEFT_ARROW &kp UP_ARROW  &kp DOWN_ARROW &KP RIGHT_ARROW &mmv MOVE_RIGHT &trans        &trans        &trans
-                                                                               &mkp LCLK
+&kp TAB  &bt NUMBER_1  &bt NUMBER_2    &bt NUMBER_3  &bt NUMBER_4    &bt NUMBER_5       &mmv MOVE_DOWN   &bt NUMBER_6  &bt NUMBER_7  &bt NUMBER_8  &bt NUMBER_9  &bt NUMBER_0  &kp BSPC
+&kp F1   &kp F2        &kp F3          &kp F4        &kp F5          &kp F6             &mmv MOVE_UP     &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&trans   &trans        &trans          &trans        &trans          &td1               &mmv MOVE_LEFT   &td2          &trans        &trans        &trans        &trans        &trans
+                       &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &KP RIGHT_ARROW    &mmv MOVE_RIGHT  &trans        &trans        &trans
+                                                                                        &mkp LCLK
             >;
 
             label = "NUMBER";
@@ -120,11 +119,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB &kp EXCL         &kp AT        &kp HASH   &kp DLLR      &kp PRCNT    &mmv MOVE_UP     &kp CARET      &kp AMPS           &kp ASTRK  &kp LPAR      &kp RPAR           &kp BSPC
-&PIPE   &bt ASTERISK     &mkp UNDER    &mkp LBRC  &mkp LBKT     &mkp LPAR    &mmv MOVE_DOWN   &kp RPAR       &kp RBKT           &kp RBRC   &kp MINUS     &kp PLUS           &kp EQUAL
-&trans  &bt SINGLE_QUOTE &bt EXCL      &bt COLON  &bt LESS_THAN &mkp SLASH   &mmv MOVE_LEFT   &kp BACKSLASH  &kp GREATER_THAN   &kp SEMI   &kp QUESTION  &kp DOUBLE_QUOTES  &kp TILDE
-                         &trans        &trans     &trans        &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
-                                                                          &mkp LCLK
+&kp TAB   &kp EXCL          &kp AT      &kp HASH   &kp DLLR       &kp PRCNT     &mmv MOVE_UP     &kp CARET      &kp AMPS          &kp ASTRK  &kp LPAR      &kp RPAR           &kp BSPC
+&kp PIPE  &bt ASTERISK      &mkp UNDER  &mkp LBRC  &mkp LBKT      &mkp LPAR     &mmv MOVE_DOWN   &kp RPAR       &kp RBKT          &kp RBRC   &kp MINUS     &kp PLUS           &kp EQUAL
+&trans    &bt SINGLE_QUOTE  &bt EXCL    &bt COLON  &bt LESS_THAN  &mkp SLASH    &mmv MOVE_LEFT   &kp BACKSLASH  &kp GREATER_THAN  &kp SEMI   &kp QUESTION  &kp DOUBLE_QUOTES  &kp TILDE
+                            &trans      &trans     &trans         &kp SPACE     &mmv MOVE_RIGHT  &kp RET        &trans            &trans
+                                                                                &mkp LCLK
             >;
 
             label = "SYMBOL";
