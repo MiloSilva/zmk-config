@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  default:
+  QWERTY:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -14,8 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-
-  - $$mdi:apple-keyboard-option$$
+  - '&td0'
   - A
   - S
   - D
@@ -28,7 +27,6 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -41,19 +39,30 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - '&td0'
-
+  - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
   - LGUI
-  - lower
-  - {t: '$$mdi:keyboard-space$$', h: '3'}
+  - NUMBER
+  - {t: '$$mdi:keyboard-space$$', h: FN}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', h: '3'}
-  - raise
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-return$$', h: FN}
+  - SYMBOL
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-
-  lower:
+  NUMBER:
+  - $$mdi:keyboard-tab$$
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: '$$mdi:backspace$$', type: backspace}
   - F1
   - F2
   - F3
@@ -67,88 +76,68 @@ layers:
   - F10
   - F11
   - F12
-
   - {t: '$$mdi:transfer$$', type: trans}
-  - NUMBER_1
-  - NUMBER_2
-  - NUMBER_3
-  - NUMBER_4
-  - NUMBER_5
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - NUMBER_6
-  - NUMBER_7
-  - NUMBER_8
-  - NUMBER_9
-  - NUMBER_0
-  - PG UP
-
   - {t: '$$mdi:transfer$$', type: trans}
-  - BT CLR ALL
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td1'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&td2'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - HOME
-  - PG DN
-
-  - $$mdi:volume-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:arrow-down-bold$$', type: held}
+  - '&KP RIGHT_ARROW'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - INS
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-
-  raise:
-  - GRAVE
-  - EXCLAMATION
-  - AT_SIGN
-  - HASH
-  - DOLLAR
-  - PERCENT
+  SYMBOL:
+  - $$mdi:keyboard-tab$$
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - CARET
-  - AMPERSAND
-  - ASTERISK
-  - LEFT_PARENTHESIS
-  - RIGHT_PARENTHESIS 
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: '$$mdi:backspace$$', type: backspace}
-
-  - PIPE
-  - ASTERISK
-  - UNDERSCORE
-  - LEFT_BRACE
-  - LEFT_BRACKET
-  - LEFT_PARENTHESIS
+  - '&PIPE'
+  - '*'
+  - '&mkp UNDER'
+  - '&mkp LBRC'
+  - '&mkp LBKT'
+  - '&mkp LPAR'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - RIGHT_PARENTHESIS
-  - RIGHT_BRACKET
-  - RIGHT_BRACE
-  - MINUS
-  - PLUS
-  - EQUAL
-
+  - )
+  - {t: ']', s: '}'}
+  - '}'
+  - {t: '-', s: _}
+  - +
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - SINGLE_QUOTE
-  - EXCLAMATION
-  - COLON
-  - LESS_THAN
-  - SLASH
+  - {t: '''', s: '"'}
+  - '!'
+  - ':'
+  - <
+  - '&mkp SLASH'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - BACKSLASH
-  - GREATER_THAN
-  - SEMICOLON
-  - QUESTION
-  - DOUBLE_QUOTES
-  - {t: '$$mdi:transfer$$', type: trans}
-
+  - {t: \, s: '|'}
+  - '>'
+  - {t: ;, s: ':'}
+  - '?'
+  - '"'
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -158,8 +147,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-
-  '3':
+  FN:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -173,7 +161,6 @@ layers:
   - F9
   - F10
   - F11
-
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
@@ -187,7 +174,6 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - PRINTSCREEN
   - F12
-
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -201,7 +187,6 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - SCROLLLOCK
   - PAUSE BREAK
-
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
