@@ -119,11 +119,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB   &kp EXCL          &kp AT      &kp HASH   &kp DLLR       &kp PRCNT     &mmv MOVE_UP     &kp CARET      &kp AMPS          &kp ASTRK  &kp LPAR      &kp RPAR           &kp BSPC
-&kp PIPE  &bt ASTERISK      &mkp UNDER  &mkp LBRC  &mkp LBKT      &mkp LPAR     &mmv MOVE_DOWN   &kp RPAR       &kp RBKT          &kp RBRC   &kp MINUS     &kp PLUS           &kp EQUAL
-&trans    &bt SINGLE_QUOTE  &bt EXCL    &bt COLON  &bt LESS_THAN  &mkp SLASH    &mmv MOVE_LEFT   &kp BACKSLASH  &kp GREATER_THAN  &kp SEMI   &kp QUESTION  &kp DOUBLE_QUOTES  &kp TILDE
-                            &trans      &trans     &trans         &kp SPACE     &mmv MOVE_RIGHT  &kp RET        &trans            &kp RALT
-                                                                                &mkp LCLK
+&kp TAB   &kp EXCL          &kp AT           &kp HASH        &kp DLLR          &kp PRCNT               &mmv MOVE_UP     &kp CARET      &kp AMPS          &kp ASTRK  &kp LPAR      &kp RPAR           &kp BSPC
+&kp PIPE  &kp ASTERISK      &kp UNDER        &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &mmv MOVE_DOWN   &kp RPAR       &kp RBKT          &kp RBRC   &kp MINUS     &kp PLUS           &kp EQUAL
+&trans    &kp SINGLE_QUOTE  &kp EXCLAMATION  &kp COLON       &kp LESS_THAN     &kp SLASH               &mmv MOVE_LEFT   &kp BACKSLASH  &kp GREATER_THAN  &kp SEMI   &kp QUESTION  &kp DOUBLE_QUOTES  &kp TILDE
+                            &trans           &trans          &trans            &kp SPACE               &mmv MOVE_RIGHT  &kp RET        &trans            &kp RALT
+                                                                                                       &mkp LCLK
             >;
 
             label = "SYMBOL";
@@ -133,11 +133,11 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &rgb_ug RGB_ON  &kp F2      &kp F3       &kp F4     &kp F5      &mmv MOVE_UP     &kp F6       &kp F7     &kp F8       &kp F9      &rgb_ug RGB_OFF  &kp F11
-&trans  &trans          &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans  &sys_reset      &trans      &bootloader  &trans     &mkp MB5    &mmv MOVE_LEFT   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                        &kp C_MUTE  &trans       &trans     &trans      &mmv MOVE_RIGHT  &trans       &trans     &trans
-                                                                        &mkp LCLK
+&trans  &rgb_ug RGB_ON  &trans      &trans  &trans  &trans    &mmv MOVE_UP     &trans  &trans  &trans  &trans  &rgb_ug RGB_OFF  &trans
+&trans  &trans          &trans      &trans  &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans           &trans
+&trans  &trans          &trans      &trans  &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans  &trans  &trans           &trans
+                        &kp C_MUTE  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans
+                                                              &mkp LCLK
             >;
 
             label = "FN";
