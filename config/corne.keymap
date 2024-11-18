@@ -118,7 +118,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB   &kp EXCL          &kp AT           &kp HASH        &kp DLLR          &kp PRCNT               &mmv MOVE_UP     &kp CARET      &kp AMPS          &kp ASTRK  &kp LPAR      &kp RPAR           &kp BSPC
+&kp TAB   &kp EXCL          &kp AT           &kp HASH        &kp DLLR          &kp PRCNT               &mmv MOVE_UP     &kp CARET      &kp AMPS          &kp TILDE  &kp LPAR      &kp RPAR           &kp BSPC
 &kp PIPE  &kp ASTERISK      &kp UNDER        &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &mmv MOVE_DOWN   &kp RPAR       &kp RBKT          &kp RBRC   &kp MINUS     &kp PLUS           &kp EQUAL
 &trans    &kp SINGLE_QUOTE  &kp EXCLAMATION  &kp COLON       &kp LESS_THAN     &kp SLASH               &mmv MOVE_LEFT   &kp BACKSLASH  &kp GREATER_THAN  &kp SEMI   &kp QUESTION  &kp DOUBLE_QUOTES  &kp TILDE
                             &trans           &kp LEFT_GUI    &trans            &kp SPACE               &mmv MOVE_RIGHT  &kp RET        &trans            &kp RALT
