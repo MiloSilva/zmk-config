@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: urob
-      revision: 2025-02-27
+      revision: "2025-02-27"
       import: app/west.yml
   self:
     path: config
