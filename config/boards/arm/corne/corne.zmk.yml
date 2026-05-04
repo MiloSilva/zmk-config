@@ -1,9 +1,10 @@
 file_format: "1"
 id: corne
-name: Sofle
+name: Corne
 url: https://github.com/tokyo2006/zmk-config-corne
 type: board
 arch: arm
+qualifiers: "SOC_NRF52840_QIAA"
 features:
   - keys
   - display
