@@ -41,7 +41,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
-  - LGUI
+  - $$mdi:apple-keyboard-command$$
   - NUMBER
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
