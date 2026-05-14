@@ -56,6 +56,9 @@ jobs:
       - name: West Zephyr Export
         run: west zephyr-export
 
+      - name: Remove incompatible pointing.h include
+        run: sed -i '/#include <dt-bindings\/zmk\/pointing.h>/d' config/corne.keymap
+
       - name: Build (${{ matrix.artifact-name }})
         run: |
           west build \
